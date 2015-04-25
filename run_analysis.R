@@ -103,4 +103,4 @@ colnames(x_all_activities_subjects) <- c(features_labels)
 
 all_averages <- ddply(x_all_activities_subjects, .(subject, activity), function(x) colMeans(x[, 3:68]))
 
-write.table(all_averages, "all_averages.txt", row.name=FALSE)
+write.table(all_averages, "all_averages.txt", row.name=FALSE) 
