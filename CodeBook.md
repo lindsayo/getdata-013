@@ -18,22 +18,22 @@ The variables in the final data set are:
 * "activity"                
 	The activity the subject performed.
 * The measurements names are built in a modular way. The components are:
-	* small letter
-		* t
-		* f
+	* Time or Frequency
+		* t: time
+		* f: frequency
 	* Type of measurement
-		* Body
-		* Gravity
+		* Body: body motion component of acceleration
+		* Gravity: gravity motion component of acceleration
 	* Instrument
-		* Acc
-		* Gyro
+		* Acc: accelerometer
+		* Gyro: gyroscope
 	* Summary statistic
-		* STD
-		* Mean
+		* STD: standard deviation
+		* Mean: mean, average
 	* Axis
-		* X
-		* Y
-		* Z
+		* X: x-axis
+		* Y: y-axis
+		* Z: z-axis
 
 	* "tBodyAccMeanX"
 	* "tBodyAccMeanY"           
