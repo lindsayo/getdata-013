@@ -23,7 +23,7 @@ _end project instructions_
 
 1. Download the UCI HAR Dataset linked above.
 2. Pull down this repository into a parallel directory.
-3. This repository should contain the UCI HAR Dataset.
+3. The working directory (from which `run_analysis.R` is run) should contain the UCI HAR Dataset.
 4. Run `run_analysis.R` 
 5. View the output of the program in `all_averages.txt`
 
