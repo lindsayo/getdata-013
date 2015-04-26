@@ -2,14 +2,14 @@
 
 This codebook is a companion to run_analysis.R, which assembles a tidy data set from the original source:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-
-**Data Set Information**
-{Overview of the experiment, the data that were collected}
+For a complete description of the experiments and measurement methods, see the README.txt in that original dataset source.
 
 **Files**
 This repository contains the following files, some original and some created for this project:
-  {list original}
-  {list new tidy data set files}
+* run_analysis.R: the script used to generate the final dataset used for analysis
+* all_averages.txt: the final dataset used for analysis
+* CodeBook.md: the guide to the variables in the final dataset used for analysis
+* README.md: the readme file
 
 **Measurements**
 The variables in the final data set are:
