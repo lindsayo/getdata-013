@@ -11,14 +11,14 @@ library(plyr)
 # Make activity label data frame
 ###############################################################################
 
-y_test <- read.table('../UCI HAR Dataset/test/y_test.txt')
-y_train <- read.table('../UCI HAR Dataset/train/y_train.txt')
+y_test <- read.table('UCI HAR Dataset/test/y_test.txt')
+y_train <- read.table('UCI HAR Dataset/train/y_train.txt')
 
 # Merge y_test and y_train into y_merged
 y_merged <- rbind(y_test,y_train)
 
-x_train <- read.table("../UCI HAR Dataset/train/X_train.txt")
-x_test <- read.table("../UCI HAR Dataset/test/X_test.txt")
+x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
+x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
 
 # Merge x_test and x_train into x_merged
 x_merged <- rbind(x_test,x_train)
@@ -38,10 +38,10 @@ activity_labels <- y_merged
 ###############################################################################
 
 # Read in subject_test.txt to subject_test data frame
-subject_test <- read.table('../UCI HAR Dataset/test/subject_test.txt')
+subject_test <- read.table('UCI HAR Dataset/test/subject_test.txt')
 
 # Read in subject_train.txt to subject_train data frame
-subject_train <- read.table('../UCI HAR Dataset/train/subject_train.txt')
+subject_train <- read.table('UCI HAR Dataset/train/subject_train.txt')
 
 # Merge subject_test and subject_train data frames into subjects
 subjects <- rbind(subject_test,subject_train)
@@ -52,7 +52,7 @@ subjects <- rbind(subject_test,subject_train)
 ###############################################################################
 
 # Read in features.txt to features data frame
-features <- read.table("../UCI HAR Dataset/features.txt")
+features <- read.table("UCI HAR Dataset/features.txt")
 colnames(features) <- c("index", "measurement")
 
 # Convert the second column in the features data frame into a vector, which we will
