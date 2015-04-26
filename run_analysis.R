@@ -63,10 +63,6 @@ features_labels <- as.vector(features['measurement'])
 # Convert the features_labels data frame to char vector
 features_labels <- features_labels$measurement
 features_labels <- as.character(features_labels)
-features_labels_subbed <- gsub("()","",features_labels, fixed=TRUE)
-features_labels_subbed <- gsub("(","-",features_labels_subbed, fixed=TRUE)
-features_labels_subbed <- gsub(")","",features_labels_subbed, fixed=TRUE)
-features_labels_subbed <- gsub(",","-",features_labels, fixed=TRUE)
 
 # Set the x_merged column names from the features_labels vector
 colnames(x_merged) <- c(features_labels)
@@ -95,6 +91,12 @@ features_labels <- colnames(x_all_activities_subjects)
 # Replace the first two values with the right variable type
 features_labels[features_labels=="V1"]<-c("subject")
 features_labels[features_labels=="V1.1"]<-c("activity")
+features_labels_subbed <- gsub(".","-",features_labels, fixed=TRUE)
+features_labels_subbed <- gsub("std","STD",features_labels_subbed, fixed=TRUE)
+features_labels_subbed <- gsub("mean","Mean",features_labels_subbed, fixed=TRUE)
+features_labels_subbed <- gsub("-","",features_labels_subbed, fixed=TRUE)
+features_labels <- features_labels_subbed
+
 
 # Replace the column names in the primary data frame with the complete names we just built
 colnames(x_all_activities_subjects) <- c(features_labels)
