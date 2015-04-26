@@ -13,10 +13,8 @@ This repository contains the following files, some original and some created for
 
 **Measurements**
 The variables in the final data set are:
-* "subject"
-	The ID number of the person measured.                 
-* "activity"                
-	The activity the subject performed.
+* "subject": The ID number of the person measured.                 
+* "activity": The activity the subject performed.
 * The measurements names are built in a modular way. The components are:
 	* Time or Frequency
 		* t: time
