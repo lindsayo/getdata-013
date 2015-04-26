@@ -4,7 +4,7 @@
 ## Set working directory to current space
 # this assumes the data are kept in a sibling directory to this run_analysis.R file
 setwd('.')
-
+library(plyr)
 
 # Step 1
 # Merges the training and the test sets to create one data set.
@@ -63,6 +63,10 @@ features_labels <- as.vector(features['measurement'])
 # Convert the features_labels data frame to char vector
 features_labels <- features_labels$measurement
 features_labels <- as.character(features_labels)
+features_labels_subbed <- gsub("()","",features_labels, fixed=TRUE)
+features_labels_subbed <- gsub("(","-",features_labels_subbed, fixed=TRUE)
+features_labels_subbed <- gsub(")","",features_labels_subbed, fixed=TRUE)
+features_labels_subbed <- gsub(",","-",features_labels, fixed=TRUE)
 
 # Set the x_merged column names from the features_labels vector
 colnames(x_merged) <- c(features_labels)
