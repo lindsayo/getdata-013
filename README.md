@@ -24,3 +24,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 3. This repository should be parallel to the UCI HAR Dataset.
 4. Run `run_analysis.R` 
 5. View the output of the program in `all_averages.txt`
+
+####Files
+
+This repository contains the following files, some original and some created for this project:
+* run_analysis.R: the script used to generate the final dataset used for analysis
+* all_averages.txt: the final dataset used for analysis
+* CodeBook.md: the guide to the variables in the final dataset used for analysis
+* README.md: this readme file
