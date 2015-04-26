@@ -13,4 +13,93 @@ This repository contains the following files, some original and some created for
 
 **Measurements**
 The variables in the final data set are:
-  {enumerate and describe the variables}
+* "subject"
+	The ID number of the person measured.                 
+* "activity"                
+	The activity the subject performed.
+* The measurements names are built in a modular way. The components are:
+** small letter
+*** t
+*** f
+** Type of measurement
+*** Body
+*** Gravity
+** Instrument
+*** Acc
+*** Gyro
+** Summary statistic
+*** STD
+*** Mean
+** Axis
+*** X
+*** Y
+*** Z
+
+
+* "tBodyAccMeanX"            
+* "tBodyAccMeanY"           
+* "tBodyAccMeanZ"            
+* "tBodyAccSTDX"            
+* "tBodyAccSTDY"             
+* "tBodyAccSTDZ"            
+* "tGravityAccMeanX"         
+* "tGravityAccMeanY"        
+* "tGravityAccMeanZ"         
+* "tGravityAccSTDX"         
+* "tGravityAccSTDY"          
+* "tGravityAccSTDZ"         
+* "tBodyAccJerkMeanX"        
+* "tBodyAccJerkMeanY"       
+* "tBodyAccJerkMeanZ"        
+* "tBodyAccJerkSTDX"        
+* "tBodyAccJerkSTDY"         
+* "tBodyAccJerkSTDZ"        
+* "tBodyGyroMeanX"           
+* "tBodyGyroMeanY"          
+* "tBodyGyroMeanZ"           
+* "tBodyGyroSTDX"           
+* "tBodyGyroSTDY"            
+* "tBodyGyroSTDZ"           
+* "tBodyGyroJerkMeanX"       
+* "tBodyGyroJerkMeanY"      
+* "tBodyGyroJerkMeanZ"       
+* "tBodyGyroJerkSTDX"       
+* "tBodyGyroJerkSTDY"        
+* "tBodyGyroJerkSTDZ"       
+* "tBodyAccMagMean"          
+* "tBodyAccMagSTD"          
+* "tGravityAccMagMean"       
+* "tGravityAccMagSTD"       
+* "tBodyAccJerkMagMean"      
+* "tBodyAccJerkMagSTD"      
+* "tBodyGyroMagMean"         
+* "tBodyGyroMagSTD"         
+* "tBodyGyroJerkMagMean"     
+* "tBodyGyroJerkMagSTD"     
+* "fBodyAccMeanX"            
+* "fBodyAccMeanY"           
+* "fBodyAccMeanZ"            
+* "fBodyAccSTDX"            
+* "fBodyAccSTDY"             
+* "fBodyAccSTDZ"            
+* "fBodyAccJerkMeanX"        
+* "fBodyAccJerkMeanY"       
+* "fBodyAccJerkMeanZ"        
+* "fBodyAccJerkSTDX"        
+* "fBodyAccJerkSTDY"         
+* "fBodyAccJerkSTDZ"        
+* "fBodyGyroMeanX"           
+* "fBodyGyroMeanY"          
+* "fBodyGyroMeanZ"           
+* "fBodyGyroSTDX"           
+* "fBodyGyroSTDY"            
+* "fBodyGyroSTDZ"           
+* "fBodyAccMagMean"          
+* "fBodyAccMagSTD"          
+* "fBodyBodyAccJerkMagMean"  
+* "fBodyBodyAccJerkMagSTD"  
+* "fBodyBodyGyroMagMean"     
+* "fBodyBodyGyroMagSTD"     
+* "fBodyBodyGyroJerkMagMean" 
+* "fBodyBodyGyroJerkMagSTD" 
+
